@@ -1,0 +1,126 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "StudentsInfo",
+    "dateExported": "2024-03-24T15:21:05.053Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "bb7a5c46-d9d1-46ce-9374-def8bf23e450",
+            "colId": "19e0692c-4a7e-4684-9ae6-2b12e9995dfe",
+            "containerId": "",
+            "name": "Insert",
+            "url": "localhost:8081/api/v1/students",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-03-24T14:20:50.777Z",
+            "modified": "2024-03-24T15:19:02.196Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\" : \"Prakash\",\n  \"emailId\" : \"prakash@gmail.com\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "basic",
+                "basic": {
+                    "username": "user123",
+                    "password": "foobar"
+                }
+            },
+            "tests": []
+        },
+        {
+            "_id": "b42fe57a-023f-42fe-a6a3-684c9e8d237b",
+            "colId": "19e0692c-4a7e-4684-9ae6-2b12e9995dfe",
+            "containerId": "",
+            "name": "Update",
+            "url": "localhost:8081/api/v1/students",
+            "method": "PATCH",
+            "sortNum": 20000,
+            "created": "2024-03-24T14:21:03.113Z",
+            "modified": "2024-03-24T15:20:27.377Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "basic ",
+                    "isDisabled": true
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"id\" : 2,\n  \"name\" : \"Bandana\",\n  \"emailId\" : \"bandana@rediff.com\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "basic",
+                "basic": {
+                    "username": "user",
+                    "password": "foobar"
+                }
+            },
+            "tests": []
+        },
+        {
+            "_id": "5d889eca-6800-4526-81d0-ca29bdda8e6c",
+            "colId": "19e0692c-4a7e-4684-9ae6-2b12e9995dfe",
+            "containerId": "",
+            "name": "Put",
+            "url": "localhost:8081/api/v1/students?id=1",
+            "method": "PUT",
+            "sortNum": 30000,
+            "created": "2024-03-24T14:21:09.344Z",
+            "modified": "2024-03-24T15:19:58.581Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "basic ",
+                    "isDisabled": true
+                }
+            ],
+            "params": [
+                {
+                    "name": "id",
+                    "value": "1",
+                    "isPath": false
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\" : \"Prakash\",\n  \"emailId\" : \"prakash@yahoo.com\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "basic",
+                "basic": {
+                    "username": "user",
+                    "password": "foobar"
+                }
+            },
+            "tests": []
+        },
+        {
+            "_id": "ddce30e5-f28b-47fd-9e2b-b7afcb463bb4",
+            "colId": "19e0692c-4a7e-4684-9ae6-2b12e9995dfe",
+            "containerId": "",
+            "name": "GetAll",
+            "url": "localhost:8081/api/v1/students",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2024-03-24T14:21:13.885Z",
+            "modified": "2024-03-24T14:21:13.885Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "basic",
+                "basic": {
+                    "username": "user",
+                    "password": "foobar"
+                }
+            },
+            "tests": []
+        }
+    ]
+}
